@@ -21,6 +21,7 @@ def main():
 
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+    assfield = AsteroidField()
 
     clock = pygame.time.Clock()
     dt = 0
