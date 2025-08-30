@@ -46,5 +46,5 @@ class Player(CircleShape):
     def shoot(self):
         now = pygame.time.get_ticks()
         if now - self.last_shot_time >= PLAYER_SHOT_COOLDOWN:
-            Shot(self.position.x, self.position.y, self.rotation)
+            shot = Shot(self.position.x, self.position.y, self.rotation)
             self.last_shot_time = now
