@@ -35,6 +35,10 @@ def main():
         screen.fill("black")
         for uptable_obj in updatable:
             uptable_obj.update(dt)
+        for asteroid in asteroids:
+           if asteroid.IsColliding(player):
+                print("Game Over!")
+                return
         for drawable_obj in drawable:
             drawable_obj.draw(screen)
         
